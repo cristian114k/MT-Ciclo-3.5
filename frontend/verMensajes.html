@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <title>Mensajes</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+
+
+ 
+  <body>
+    <script>readMessage();</script>
+    <div>
+    <table class="table" id="tabla">
+        <thead class="table-dark">
+            <tr id="headClients">
+                <th class="text-center" colspan="12" scope='col'>Mensajes</th>
+            </tr>
+            <tr id="headClients" class="text-center">
+                <th scope='col' colspan="5">ID</th>
+                <th scope='col' colspan="5">Mensaje</th>
+                <th scope='col' >Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="listMessages">
+            <tr class="text-center">
+                
+                
+            </tr>
+        </tbody>
+    </table>  
+    </div>
+    
+
+    <div id="modalMensaje" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="idEditarMessage" class="col-form-label">Id</label>
+                <input class="form-control" type="text" value="" aria-label="Disabled input example" disabled readonly id="idEditarMessage">
+            </div>
+            <div class="mb-3">
+                <label for="mensajeEditar" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="mensajeEditar" rows="3"></textarea>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer" id="btnsModal">
+            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button> <button type='button' class='btn btn-primary' onclick='updateMessage()'>Guardar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script></script>
+
+  </body>
+</html>

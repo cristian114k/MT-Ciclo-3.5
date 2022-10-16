@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Reto 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+
+  <body class="p-3 m-0 border-0 bd-example bd-example-row">
+
+    <!--<script>readClient();</script>-->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">&Oacutertesis</h3>
+          <label for="exampleFormControlInput1" class="form-label">ID</label>
+          <input type="number" id="idOrtesis" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Marca</label>
+          <input type="text" id="marcaOrtesis" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Modelo</label>
+          <input type="number" id="modeloOrtesis" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Categoria ID</label>
+          <input type="number" id="categoriaIdOrtesis" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="text" id="nombreOrtesis" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <br>
+          <button onclick="saveOrtesis()" type="button" class="btn btn-primary">Guardar</button>
+          <button id="btnRegistrosMensajes" onclick="location.href='verOrtesis.html'" type="button" class="btn btn-primary">Ver &Oacutertesis</button>
+        </div>
+        <div class="col">
+          <h3 class="text-center">Clientes</h3>
+          <label for="exampleFormControlInput1" class="form-label">ID</label>
+          <input type="number" id="idCliente" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="text" id="nombreCliente" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Correo</label>
+          <input type="text" id="correoCliente" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          <label for="exampleFormControlInput1" class="form-label">Edad</label>
+          <input type="number" id="edadCliente" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example"><br>
+          <button onclick="saveClient()" type="button" class="btn btn-primary">Guardar</button>
+          <button id="btnRegistrosClientes" onclick="location.href='verclientes.html'" type="button" class="btn btn-primary">Ver Clientes</button>
+          
+        </div>
+        
+        <div class="col">
+            <h3 class="text-center">Mensajes</h3>
+            <label for="exampleFormControlInput1" class="form-label">ID</label>
+            <input type="number" id="idMensaje" class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+            <label for="exampleFormControlInput1" class="form-label">Mensaje</label>
+            <textarea type="text" id="mensajeTexto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <br>
+            <button onclick="saveMessage()" type="button" class="btn btn-primary">Guardar</button>
+            <button id="btnRegistrosMensajes" onclick="location.href='verMensajes.html'" type="button" class="btn btn-primary">Ver Mensajes</button>            
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

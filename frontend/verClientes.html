@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <title>Clientes</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+
+
+ 
+  <body>
+    <script>readClient();</script>
+    <div>
+    <table class="table" id="tabla">
+        <thead class="table-dark">
+            <tr id="headClients">
+                <th class="text-center" colspan="12" scope='col'>CLIENTES</th>
+            </tr>
+            <tr id="headClients" class="text-center">
+                <th scope='col' colspan="2">ID</th>
+                <th scope='col' colspan="3">Nombre</th>
+                <th scope='col' colspan="3">Correo</th>
+                <th scope='col' colspan="2">Edad</th>
+                <th scope='col' >Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="listClients">
+            <tr class="text-center">
+                
+                
+            </tr>
+        </tbody>
+    </table>  
+    </div>
+    
+
+    <div id="modalCliente" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cliente</h5>
+            <button type="button" onclick='readClient()' class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="idEditar" class="col-form-label">Id</label>
+                <input class="form-control" type="text" value="" aria-label="Disabled input example" disabled readonly id="idEditar">
+            </div>
+            <div class="mb-3">
+                <label for="nombreEditar" class="col-form-label" id="idEditar">Nombre</label>
+                <input type="text" class="form-control" id="nombreEditar">
+            </div>
+            <div class="mb-3">
+                <label for="correoEditar" class="col-form-label">Correo</label>
+                <input type="text" class="form-control" id="correoEditar">
+            </div>
+            <div class="mb-3">
+                <label for="edadEditar" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="edadEditar">
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer" id="btnsModal">
+            <button type='button' onclick='readClient()' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button> <button type='button' class='btn btn-primary' onclick='updateClient()'>Guardar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script></script>
+
+  </body>
+</html>
